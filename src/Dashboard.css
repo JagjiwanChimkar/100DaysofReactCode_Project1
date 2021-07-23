@@ -1,0 +1,33 @@
+.statistics{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.student_stat{
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 10px 80px 10px 20px;
+    background-color: #8d9aa4;
+}
+
+.address_stat{
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 10px 80px 10px 20px;
+    background-color: #a9f0c5;
+}
+
+.status_stat{
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 10px 80px 10px 20px;
+    background-color: #f9b8db;
+}
+
+.status_stat>p{
+    margin: 5px;
+}
