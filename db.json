@@ -1,0 +1,214 @@
+{
+  "users": [
+    {
+      "name": "Manish Kumar",
+      "code": 1009,
+      "address": {
+        "country": "India",
+        "city": "Pune"
+      },
+      "status": "inactive",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Johnson Jones",
+      "code": 1002,
+      "address": {
+        "country": "USA",
+        "city": "California"
+      },
+      "status": "inactive"
+    },
+    {
+      "id": 3,
+      "name": "Jeevan Ray",
+      "code": 1003,
+      "address": {
+        "country": "Germany",
+        "city": "Bamberg"
+      },
+      "status": "inprogress"
+    },
+    {
+      "id": 4,
+      "name": "Swayam Rout",
+      "code": 1001,
+      "address": {
+        "country": "India",
+        "city": "Mumbai"
+      },
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "name": "Johnson Jones",
+      "code": 1002,
+      "address": {
+        "country": "USA",
+        "city": "California"
+      },
+      "status": "inactive"
+    },
+    {
+      "id": 6,
+      "name": "Jeevan Ray",
+      "code": 1003,
+      "address": {
+        "country": "Germany",
+        "city": "Bamberg"
+      },
+      "status": "inprogress"
+    },
+    {
+      "id": 7,
+      "name": "Swayam Rout",
+      "code": 1001,
+      "address": {
+        "country": "India",
+        "city": "Pune"
+      },
+      "status": "active"
+    },
+    {
+      "id": 8,
+      "name": "Johnson Jones",
+      "code": 1002,
+      "address": {
+        "country": "USA",
+        "city": "California"
+      },
+      "status": "inactive"
+    },
+    {
+      "id": 9,
+      "name": "Jeevan Ray",
+      "code": 1003,
+      "address": {
+        "country": "Germany",
+        "city": "Bamberg"
+      },
+      "status": "inprogress"
+    },
+    {
+      "id": 10,
+      "name": "Swayam Rout",
+      "code": 1001,
+      "address": {
+        "country": "India",
+        "city": "Mumbai"
+      },
+      "status": "active"
+    },
+    {
+      "id": 11,
+      "name": "Johnson Jones",
+      "code": 1002,
+      "address": {
+        "country": "USA",
+        "city": "California"
+      },
+      "status": "inactive"
+    },
+    {
+      "id": 12,
+      "name": "Jeevan Ray",
+      "code": 1003,
+      "address": {
+        "country": "Germany",
+        "city": "Bamberg"
+      },
+      "status": "inprogress"
+    },
+    {
+      "id": 13,
+      "name": "Swayam Rout",
+      "code": 1001,
+      "address": {
+        "country": "India",
+        "city": "Mumbai"
+      },
+      "status": "active"
+    },
+    {
+      "id": 14,
+      "name": "Johnson Jones",
+      "code": 1002,
+      "address": {
+        "country": "USA",
+        "city": "California"
+      },
+      "status": "inactive"
+    },
+    {
+      "name": "Raj kumar",
+      "code": 1005,
+      "address": {
+        "country": "USA",
+        "city": "New York"
+      },
+      "status": "active",
+      "id": 18
+    },
+    {
+      "name": "Raj kumar",
+      "code": 1006,
+      "address": {
+        "country": "USA",
+        "city": "New York"
+      },
+      "status": "active",
+      "id": 19
+    },
+    {
+      "name": "Raj kumar",
+      "code": 1006,
+      "address": {
+        "country": "USA",
+        "city": "New York"
+      },
+      "status": "active",
+      "id": 20
+    },
+    {
+      "name": "Mohan Gaikwad",
+      "code": 1007,
+      "address": {
+        "country": "USA",
+        "city": "Florida"
+      },
+      "status": "inactive",
+      "id": 21
+    },
+    {
+      "name": "Mohan Gaikwad",
+      "code": 1007,
+      "address": {
+        "country": "USA",
+        "city": "Florida"
+      },
+      "status": "active",
+      "id": 22
+    },
+    {
+      "name": "Sanket Rai",
+      "code": 1008,
+      "address": {
+        "country": "Canada",
+        "city": "Toronto"
+      },
+      "status": "inactive",
+      "id": 23
+    },
+    {
+      "name": "Sanket Rai",
+      "code": 1008,
+      "address": {
+        "country": "Canada",
+        "city": "Toronto"
+      },
+      "status": "active",
+      "id": 24
+    }
+  ]
+}
