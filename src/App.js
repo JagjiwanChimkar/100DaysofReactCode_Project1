@@ -1,56 +1,36 @@
-import {useState,useEffect} from 'react'
-import './App.css';
-import Data from './data.json'
-import Item from './Item';
-import ReactPaginate from 'react-paginate';
-import Dashboard from './Dashboard';
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { get_stat } from "./actions/statActions";
+import { getUsers } from "./actions/usersActions";
+import "./App.css";
+import Dashboard from "./components/Dashboard";
+import Filter from "./components/Filter";
+import Pagination from "./components/Pagination";
+
 
 function App() {
-  const [pagination, setPagination] = useState({
-    data: Data,
-    offset: 0,
-    numberPerPage: 10,
-    pageCount: 0,
-    currentData: []
-  });
-
-  useEffect(() => {
-    setPagination((prevState) => ({
-      ...prevState,
-      pageCount: prevState.data.length / prevState.numberPerPage,
-      currentData: prevState.data.slice(pagination.offset, pagination.offset + pagination.numberPerPage)
-    }))
-  }, [pagination.numberPerPage, pagination.offset])
-
-  const handlePageClick = event => {
-    const selected = event.selected;
-    const offset = selected * pagination.numberPerPage
-    setPagination({ ...pagination, offset })
-  }
+  console.log('render');
+  const dispatch = useDispatch();
+ 
+  const users = useSelector(state=>state.users);
+  const stat = useSelector(state=>state.stat);
+   
+  
+  useEffect(()=>{
+    dispatch(getUsers());
+    dispatch(get_stat(users));
+    // eslint-disable-next-line
+  },[dispatch])
+  
+ 
+  console.log('In APP :',users,stat);
+  
   return (
-    <div className="App">
-     <Dashboard Data={Data}/>
-      {pagination.currentData && pagination.currentData.map(((item, index) => (
-        <Item key={index} item={item}/>
-       ))
-      )}
-      <div className="pagination_nav">
-      <p>Showing {pagination.offset+1} to {(Data.length-pagination.offset)<10?Data.length:pagination.offset+10} of {Data.length}</p>
-      <ReactPaginate
-        previousLabel={'Previous'}
-        nextLabel={'Next'}
-        breakLabel={'...'}
-        previousClassName={'btn'}
-        nextClassName={'btn'}
-        pageCount={pagination.pageCount}
-        marginPagesDisplayed={2}
-        pageRangeDisplayed={5}
-        onPageChange={handlePageClick}
-        containerClassName={'pagination'}
-        activeClassName={'active_page'}
-      />
-      </div>
-     
+    <div className="mx-10">
+      <p className="text-5xl my-5">Welcome to Dashboard</p>
+      <Dashboard />
+      <Filter/>
+      <Pagination/>
     </div>
   );
 }
