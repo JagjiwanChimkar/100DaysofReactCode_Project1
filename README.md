@@ -7,5 +7,6 @@
   2. Download it 
   3. Install Dependencies using `$ npm install` 
   4. Run using `$ npm start` command
-
+  
+## ScreeShot
 ![Home-Page](https://github.com/JagjiwanChimkar/100DaysofReactCode_Project1/blob/main/screenshot/homepage.png)
