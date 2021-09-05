@@ -8,4 +8,4 @@
   3. Install Dependencies using `$ npm install` 
   4. Run using `$ npm start` command
 
-![Home-Page](https://octodex.github.com/images/yaktocat.png)
+![Home-Page](https://github.com/JagjiwanChimkar/100DaysofReactCode_Project1/blob/main/screenshot/homepage.png)
