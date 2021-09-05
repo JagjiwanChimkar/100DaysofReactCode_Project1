@@ -8,4 +8,4 @@
   3. Install Dependencies using `$ npm install` 
   4. Run using `$ npm start` command
 
-![Home-Page](https://drive.google.com/file/d/1cLturq1UFGBPkLODVLqAK5Fr6Yf8kmzs/view?usp=sharing)
+![Home-Page](https://github.com/JagjiwanChimkar/100DaysofReactCode_Project1/tree/main/screenshot)
