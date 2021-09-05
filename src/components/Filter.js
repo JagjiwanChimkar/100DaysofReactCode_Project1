@@ -15,8 +15,9 @@ function Filter() {
 
   return (
     <>
-      <div>
-        <input placeholder="Filter By Name" value={filterData.name} onChange={e=>{
+      <div className="flex justify-around m-2">
+        <input 
+          placeholder="Filter By Name" value={filterData.name} onChange={e=>{
           dispatch(getUsers());
           setfilterData({...filterData,name:e.target.value.toLowerCase()})}}/>
         
@@ -69,7 +70,8 @@ function Filter() {
         </select>
 
 
-        <button onClick={() => {dispatch({ type: "FILTER",data:filterData })
+        <button className="bg-yellow-400 px-4 rounded-xl" 
+        onClick={() => {dispatch({ type: "FILTER",data:filterData })
       console.log('btn clicked :',filterData)}} >Filter</button>
       </div>
       
