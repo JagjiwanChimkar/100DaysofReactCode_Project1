@@ -12,7 +12,7 @@
 ![Home-Page](https://github.com/JagjiwanChimkar/100DaysofReactCode_Project1/blob/main/screenshot/homepage.png)
 
 
-###What it's Does:
+### What it's Does:
 - Display List of student details in Table format where data is fetched from JSON formated mockAPI hosted on localhost server.
 - At most 10 students display per page and create custom pagination.
 - Sort student table according to name, country, etc.
