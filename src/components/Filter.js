@@ -73,8 +73,9 @@ function Filter() {
         <button className="bg-yellow-400 px-4 rounded-xl" 
         onClick={() => {dispatch({ type: "FILTER",data:filterData })
       console.log('btn clicked :',filterData)}} >Filter</button>
+       <button className="bg-blue-400 px-4 rounded-xl" onClick={()=>window.location.reload(false)}>Reload Data</button> 
       </div>
-      
+     
     </>
   );
 }

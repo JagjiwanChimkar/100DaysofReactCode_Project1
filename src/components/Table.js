@@ -21,6 +21,8 @@ function Table({ users }) {
 
   const [trigger, setTrigger] = useState(false);
 
+  const sortValue={1:"name",2:"country",3:"city",5:"code"};
+
   const handleDelete = (user) => {
     const confirmBox = window.confirm(
       "Do you really want to delete this Student?"
@@ -33,6 +35,7 @@ function Table({ users }) {
   useEffect(() => {
     if (user) setNewUserData(user);
   }, [user]);
+
 
   return (
     <>
@@ -49,7 +52,7 @@ function Table({ users }) {
                       <button
                         className="bg-yellow-300 rounded-full w-2/4 m-2"
                         onClick={() =>
-                          dispatch({ type: "SORT", value: "name" })
+                          dispatch({ type: "SORT", value: sortValue[index] })
                         }
                       >
                         Sort
@@ -133,13 +136,17 @@ function Table({ users }) {
           label="Code"
           value={newUserData.code}
           onChange={(e) =>
-            setNewUserData({ ...newUserData, code: e.target.value })
-          }
+            setNewUserData({ ...newUserData, code: e.target.value })}
         />
         <Button
           variant="contained"
           color="primary"
-          onClick={() => dispatch(updateUser(currentId, newUserData))}
+          onClick={() => {
+            dispatch(updateUser(currentId, newUserData))
+            setTrigger(false);
+          }
+          }
+            
         >
           Save
         </Button>
